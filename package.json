@@ -1,0 +1,21 @@
+{
+  "name": "autocomplete-directive-angular",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "browserify": "^16.2.0",
+    "watchify": "^3.11.0"
+  },
+  "scripts": {
+    "start": "mkdir -p dist && watchify modules/autocomplete.js -v -t babelify -o dist/sautocomplete.js"
+  },
+  "dependencies": {
+    "angular": "^1.6.10",
+    "angularjs": "^0.0.1",
+    "lodash": "^4.17.10"
+  }
+}
